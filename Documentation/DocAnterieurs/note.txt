@@ -1,0 +1,19 @@
+****Configuration de SWI-PROLOG****
+
+Fichier de configuration à ajouter dans son répertoire personnel : .plrc, dont le contenu est
+
+:-  set_prolog_flag(prompt_alternatives_on, groundness).
+
+****Mode Prolog pour Emacs****
+
+    * récupérez le fichier prolog.el ici
+    * ajoutez les lignes suivantes dans le fichier .emacs situé à la racine de votre répertoire personnel (ou créez le si il n'existe pas).
+      (setq load-path (cons "LE REPERTOIRE QUI CONTIENT prolog.el" load-path))
+      (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+      (setq auto-mode-alist (cons '("\\.pl\$" . prolog-mode) auto-mode-alist))
+      (setq prolog-system 'swi)
+
+      Le mode sera activé automatiquement pour un fichier d'extension .pl (il peut éventuellement venir en conflit avec un mode pour le langage Perl).
+
+    * Vous pouvez utiliser les menus proposés, notamment le menu Prolog (NB : dans un menu C-c signifie Ctrl-C et M-x signifie Esc x).
+

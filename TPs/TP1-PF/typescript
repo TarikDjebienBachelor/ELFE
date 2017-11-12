@@ -1,0 +1,8 @@
+Le script a débuté sur jeu. 24 févr. 2011 20:52:47 CET
+tarik@Tarik-Linux:~/Bureau$ ocamlc -o cesar Cesar.ml
+tarik@Tarik-Linux:~/Bureau$ ./cesar 3 "Le pont neuf fait soixante pieds."
+Oh srqw qhxi idlw vrladqwh slhgv.
+tarik@Tarik-Linux:~/Bureau$ exit
+exit
+
+Script complété sur jeu. 24 févr. 2011 20:53:15 CET

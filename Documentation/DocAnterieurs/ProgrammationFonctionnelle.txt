@@ -1,0 +1,14 @@
+Programmation fonctionnelle
+
+Mode Caml pour Emacs
+
+    * récupérez le fichier tuareg-mode-1.45.5 ;
+    * décompressez-le dans un dossier de votre dossier personnel ;
+    * ajoutez les lignes suivantes dans le fichier .emacs situé à la racine de votre répertoire personnel (ou créez le si il n'existe pas).
+      (setq load-path (cons "LE REPERTOIRE QUI CONTIENT tuareg.el" load-path))
+      (setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
+      (autoload 'tuareg-mode "tuareg" "Mode majeur pour ï¿œditer du code Caml" t)
+      (autoload 'camldebug "camldebug" "Exï¿œcuter le dï¿œbogueur Caml" t)
+      Le mode sera activé automatiquement pour un fichier d'extension .ml.
+    * Vous pouvez utiliser les menus proposés, notamment le menu Tuareg (NB : 	    dans un menu C-c signifie Ctrl-C et M-x signifie Esc x).
+
